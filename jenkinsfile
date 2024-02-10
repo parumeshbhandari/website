@@ -30,7 +30,7 @@ pipeline{
 
             steps {
 
-                sh 'sudo docker build /home/ubuntu/jenkins/workspace/test-devps -t docker6767/10-feb'
+                sh 'sudo docker build /home/ubuntu/workspace/test-devps -t docker6767/10-feb'
                 sh 'sudo echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
                 sh 'sudo docker push docker6767/10-feb'
 
