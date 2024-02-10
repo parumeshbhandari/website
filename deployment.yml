@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: custom
-        image: docker6767/latest
+        image: bhandarignn1294/10-feb
         ports:
         - containerPort: 80
