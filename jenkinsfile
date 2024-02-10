@@ -30,9 +30,9 @@ pipeline{
 
             steps {
 
-                sh 'sudo docker build /home/ubuntu/jenkins/workspace/FinalProject -t docker6767/image'
+                sh 'sudo docker build /home/ubuntu/jenkins/workspace/job -t docker6767/10-feb'
                 sh 'sudo echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-                sh 'sudo docker push docker6767/image'
+                sh 'sudo docker push docker6767/10-feb'
 
             }
         }
