@@ -43,8 +43,8 @@ pipeline{
 
             steps {
 
-                sh 'kubectl create -f deploy.yml'
-                sh 'kubectl create -f svc.yml'
+                sh 'kubectl create -f deployment.yml'
+                sh 'kubectl create -f service.yml'
             }
         }        
         
